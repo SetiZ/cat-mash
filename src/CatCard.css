@@ -1,0 +1,16 @@
+.cat_card .cat_img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.cat_card .cat_score {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 5em;
+  width: 100%;
+  opacity: 0.75;
+  color: #fff;
+  text-shadow: 2px 0px 3px black;
+}
