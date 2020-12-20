@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { fetchCats, getCats, getRandomCats } from './CatStore';
+import { fetchCats, getCats } from './CatStore';
 import CatCard from './CatCard';
 import Header from './Header';
 import './Cats.css';
@@ -16,7 +16,6 @@ function Cats() {
         () => {
           setIsLoaded(true);
           setItems(getCats());
-          console.log(getRandomCats())
         },
         (error) => {
           setIsLoaded(true);

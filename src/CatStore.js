@@ -17,12 +17,9 @@ export function getCats() {
 }
 
 export function getRandomCats() {
-  
-  const result = data.cats.slice(0, 2).map(() => { 
+  return data.cats.slice(0, 2).map(() => {
     return data.cats.splice(Math.floor(Math.random() * data.cats.length), 1)[0];
   }, data.cats.slice());
-  console.log(result)
-  return result
   // return data.cats[Math.floor(Math.random()*data.cats.length)];
 }
 
